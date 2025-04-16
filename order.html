@@ -1,0 +1,71 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Now | Principale Ristorante Di Nino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<ul class="navbar">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="menu.html">🍽 Menu</a></li>
+      <li><a href="order.html">🛒 Order Now</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+      <li><a href="Drink.html">🥤 Drinks</a></li>
+    </ul>
+  </nav>  
+<body>
+  <section class="order-section">
+    <h1>🛒 Order Now</h1>
+    <form class="order-form">
+        <form class="order-form" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          
+            <label for="type">Order Type:</label>
+            <select id="type" name="type" required>
+              <option value="dine-in">Dine In</option>
+              <option value="takeaway">Takeaway</option>
+              <option value="delivery">Delivery</option>
+            </select>
+          
+            <label for="dishes">Select Dishes:</label>
+            <textarea id="dishes" name="dishes" placeholder="Write your selected dishes..." required></textarea>
+          
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" placeholder="Any special requests?"></textarea>
+          
+            <button type="submit">Send Order</button>
+          </form>          
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="type">Order Type:</label>
+      <select id="type" required>
+        <option value="dine-in">Dine In</option>
+        <option value="takeaway">Takeaway</option>
+        <option value="delivery">Delivery</option>
+      </select>
+
+      <label for="dishes">Select Dishes:</label>
+      <textarea id="dishes" placeholder="Write your selected dishes..."></textarea>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" placeholder="Any special requests?"></textarea>
+
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.html">
+<link rel="stylesheet" href="Drink.html">
+<link rel="stylesheet" href="index .html">
